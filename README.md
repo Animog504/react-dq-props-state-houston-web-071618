@@ -4,16 +4,18 @@ In this program, we have three components: `App`, `MasterHog`, and `BabyHog`.
 
 ###### `MasterHog`:
 
-- Has an eye color that can change via a radio button on the DOM
+- Has an eye color that can change via a radio button on the DOM //state
 - Renders three `BabyHog`s, which inherit its eye color
 - Owns the non-variable data associated with each `BabyHog`. This includes their: name, eye color, and hobby. _(Obviously, `MasterHog` gets to name her babies, and they genetically inherit her eye color. Not obviously, `MasterHog` also gets to determine their hobbies)_
+//props
 
 ###### `BabyHog`:
 
-- Has an eye color received from its parent
-- Has a hobby assigned by its parent
-- Has a name given by its parent
+- Has an eye color received from its parent //prop
+- Has a hobby assigned by its parent  //prop
+- Has a name given by its parent //prop
 - Has a variable weight, that can be changed via buttons
+//state
 
 **Note:** While the `MasterHog` component can change its own eye color via radio buttons, its children can only inherit the eye color of their parent!
 
